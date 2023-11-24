@@ -159,10 +159,15 @@ foreach (array_reverse($films) as $film){
 ?>
 </div>
 </div>
-<style>
-
-
-</style>
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(function(OneSignal) {
+    OneSignal.init({
+      appId: "0c6f9cee-4576-4040-87a6-7b09bb50015e",
+    });
+  });
+</script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/Shuffle/6.1.0/shuffle.min.js"></script>
 <script src="script.js"></script>
 </body>
