@@ -124,7 +124,7 @@ class Demo {
 
   // Advanced filtering
   addSearchFilter() {
-    const searchInput = document.querySelector('.js-shuffle-search');
+    const searchInput = document.querySelector('.searchBox');
     if (!searchInput) {
       return;
     }
@@ -148,8 +148,8 @@ class Demo {
           return false;
         }
       }
-      const titleElement = element.querySelector('.picture-item__title');
-      const titleText = titleElement.textContent.toLowerCase().trim();
+
+      const titleText = element.getAttribute('data-title').toLowerCase().replace(/[^0-9a-z]/gi);
       return titleText.indexOf(searchText) !== -1;
     });
   }

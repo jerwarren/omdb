@@ -238,3 +238,15 @@ body {
         margin-left: -8vw;
     }
 }
+
+.searchBox {
+    right: 3.5em;
+    height: 2em;
+    position: absolute;
+    top: 1em;
+    border-radius: 5px;
+    width: 16em;
+    padding-left: 0.25em;
+    padding-left: 1em;
+    overflow:hidden;
+}
