@@ -6,7 +6,8 @@ class Demo {
     this.shuffle = new Shuffle(this.element, {
       itemSelector: '.card',
       columnWidth: 300,
-      rowHeight: 500
+      rowHeight: 500,
+      isCentered: true
     });
 
     // Log events.
