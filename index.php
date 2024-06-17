@@ -114,7 +114,7 @@ $i++;
 		<meta property="og:description" content="Owen\'s horror movie satisfaction log" />
 		<meta property="og:image" content="omdb.png" />
 		<link rel="icon" href="images/ombd-favicon.png">
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="style.css?6-16">
 	</head>
 <body>
 	<div class="header">
@@ -169,6 +169,6 @@ foreach (array_reverse($films) as $film){
   });
 </script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/Shuffle/6.1.0/shuffle.min.js"></script>
-<script src="script.js"></script>
+<script src="script.js?6-16"></script>
 </body>
 </html>
